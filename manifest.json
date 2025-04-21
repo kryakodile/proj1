@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,  
+  "name": "dApp Connection Notifier",
+  "version": "1",
+  "description": "Проверяет адреса dApp перед подключением MetaMask",
+  "permissions": ["activeTab", "scripting"], 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],  
+      "js": ["content.js"]  
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["safeList.json"],  
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",  
+    "48": "icon48.png",  
+    "128": "icon128.png"  
+  }
+}
