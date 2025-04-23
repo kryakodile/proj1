@@ -11,20 +11,6 @@
         alert("😬 Адрес " + currentURL + " не найден в базе. Будьте осторожны!");  //если адреса не оказалось в базе
     }
 
-    // // Перехват запросов MetaMask на авторизацию
-    // if (window.ethereum) {
-    //     const originalRequest = window.ethereum.request;
-    //     window.ethereum.request = async function(args) {
-    //         if (args && args.method === "eth_requestAccounts") {
-    //             if (list.safe.includes(currentURL)) {
-    //                 alert(" Это проверенный dApp: " + currentURL);
-    //             } else if (list.scam.includes(currentURL)) {
-    //                 alert(" ВНИМАНИЕ! Это сайт из списка скамов: " + currentURL);
-    //             } else {
-    //                 alert(" Адрес " + currentURL + " не найден в базе. Будьте осторожны!");
-    //             }
-    //         }
-    //         return originalRequest.apply(this, arguments);
-    //     };
-    // }
+    // мб добавить проверку при вызове метода для привязки кошелька
+
 })();
