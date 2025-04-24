@@ -4,7 +4,7 @@
     const currentURL = window.location.hostname;  //определяем адрес сайта
 
     if (list.safe.includes(currentURL)) {
-        alert("😍 Это проверенный dApp: " + currentURL);  //проверяем есть ли юрл в сейф
+        alert("😍 Это проверенный адрес: " + currentURL);  //проверяем есть ли юрл в сейф
     } else if (list.scam.includes(currentURL)) {
         alert("😥 Небезопасный сайт! " + currentURL);  //выводим скам
     } else {

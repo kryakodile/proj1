@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,  
-  "name": "dApp Connection Notifier",
+  "name": "Connection Notifier",
   "version": "1",
-  "description": "Проверяет адреса dApp перед подключением MetaMask",
+  "description": "Проверяет адреса перед подключением MetaMask",
   "permissions": ["activeTab", "scripting"], 
   "background": {
     "service_worker": "background.js"
